@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sureshkumar S | Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background: linear-gradient(120deg, #f0f4f8, #ffffff);
+      color: #333;
+      animation: fadeIn 1s ease-in;
+    }
+    h1, h2, h3 {
+      color: #2b6cb0;
+    }
+    header, section, footer {
+      margin-bottom: 30px;
+    }
+    a {
+      color: #2b6cb0;
+      text-decoration: none;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .contact-info {
+      margin-bottom: 10px;
+    }
+    .profile-pic {
+      width: 180px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      animation: bounceIn 1.2s ease;
+    }
+    .download-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 16px;
+      background: #2b6cb0;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .download-btn:hover {
+      background: #234e80;
+    }
+    .dark-toggle {
+      margin-top: 20px;
+      padding: 8px 12px;
+      background: #4a5568;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    body.dark-mode {
+      background: #1a202c;
+      color: #e2e8f0;
+    }
+    body.dark-mode h1,
+    body.dark-mode h2,
+    body.dark-mode h3 {
+      color: #90cdf4;
+    }
+    body.dark-mode a {
+      color: #63b3ed;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes bounceIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      60% { transform: scale(1.05); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="profile.jpg" alt="Sureshkumar S" class="profile-pic"/>
+    <h1>Sureshkumar S</h1>
+    <p class="contact-info">
+      <strong>Email:</strong> <a href="mailto:Sureshkumars_41@bim.edu">Sureshkumars_41@bim.edu</a> <br/>
+      <strong>Phone:</strong> +91 9655742507 <br/>
+      <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/sureshkumar-s-347190233" target="_blank">linkedin.com/in/sureshkumar-s</a>
+    </p>
+    <a href="resume.pdf" download class="download-btn">📄 Download Resume (PDF)</a>
+    <button id="darkModeToggle" class="dark-toggle">🌓 Toggle Dark Mode</button>
+  </header>
+
+  <script>
+    const toggle = document.getElementById('darkModeToggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+</body>
+</html>
